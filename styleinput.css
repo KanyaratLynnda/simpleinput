@@ -1,0 +1,78 @@
+
+
+input::placeholder {
+  color: #888888;
+  font-size: large;
+  transition: 0.15s;
+}
+
+/*
+The ::placeholder pseudo-element can also be clubbed with pseudo-classes like
+:hover, :focus, etc.
+*/
+input:hover::placeholder {
+    color: #59890a;
+    padding: 5px;
+    background-color: rgba(154, 230, 155, 0.27);
+}
+
+/* Additional styling */
+* {
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.header{
+  width: 100%;
+  min-height: 30vh;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 70px;
+  /* background-color: #324e03; */
+  color: #fff;
+  background: linear-gradient(-45deg, #2d6406, #e0296f, #718f03, #77c55f);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.inputinfo {
+  margin: 0;
+  padding: 10px;
+  min-height: 60vh;
+  width: 90vw;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  color: #888888;
+  display: inline-block;
+  margin: 24px 0;
+  border: 1px;
+  outline: none;
+  padding-bottom: 5px;
+  width: 85%;
+  font-size: large;
+  border-bottom: 2px solid #888888;
+  transition: 0.2s;
+}
+
+input:focus {
+  color: #59890a;
+  border-bottom: 2px solid #446b04;
+}
+
